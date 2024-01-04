@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Fest Registration</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+
+    <style>
+        body {
+            font-family: "Trirong", serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+	    background-image:url('bg.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            background-color: transparent;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+       	
+	
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #666;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #fff;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        
+        .btn {
+            background-color: #4CAF50;
+            color: transparent;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        
+        .btn:hover {
+            background-color: #45a049;
+        }
+        
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+form {
+    width: 400px;
+    margin: 0 auto;
+    background-color:transparent;
+
+}
+
+
+
+input[type="text"],
+input[type="email"],
+textarea,
+select{
+
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    background-color: transparent;
+    
+}
+
+input[type="submit"] {
+    background-color: goldenrod;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+::placeholder{
+    color:black;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+#event{
+	color:gray;
+	font-size:20px;
+}
+label {
+  font-size: 20px;
+  font-weight:bold;
+  color:black;
+
+}
+
+input[type="checkbox"], label {
+  display: inline-block;
+  vertical-align: middle;
+
+
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="color:black";>Fest Registration</h1>
+        <form action="./RegisterServlet1" method="POST"  background-color : #ffc>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <label for="college">College:</label>
+            <input type="text" id="college" name="college" placeholder="Enter your college name" required>
+
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+	<label for="sports"style="color: #666699">Sports Events:</label><br>
+	 		<input type="checkbox" id="Cricket" name="Cricket">
+			<label for="Cricket">Cricket</label>
+			<input type="checkbox" id="Kho-Kho" name="Kho-Kho">
+			<label for="Kho-Kho">Kho-Kho</label>
+			<input type="checkbox" id="Kabbadi" name="Kabbadi">
+			<label for="Kabbadi">Kabbadi</label><br>
+			<input type="checkbox" id="Track Events" name="Track Events">
+			<label for="Track Events">Track Events</label>
+			<input type="checkbox" id="Badminton" name="Badminton">
+			<label for="Badminton">Badminton</label><br>
+			<input type="checkbox" id="Throwball" name="Throwball">
+			<label for="Throwball">Throwball</label><br>
+					
+
+	
+	<label for="culturals"style="color:#666699">Culturals:</label><br>
+			<input type="checkbox" id="Group Dance" name="Group Dance">
+			<label for="Group Dance">Group Dance</label>
+			<input type="checkbox" id="Solo Dance" name="Solo Dance">
+			<label for="Solo Dance">Solo Dance</label><br>
+			<input type="checkbox" id="Dancing Duo" name="Dancing Duo">
+			<label for="Dancing Duo">Dancing Duo</label>
+			<input type="checkbox" id="" name="Singing Contest">
+			<label for="Singing Contest">Singing Contest</label>
+			<input type="checkbox" id="Skit" name="Skit">
+			<label for="Skit">Skit</label>
+			<input type="checkbox" id="Monoaction" name="Monoaction">
+			<label for="Monoaction">Monoaction</label><br>					
+	
+	<label for="Technical"style="color:#666699">Technical Events:</label><br>
+			<input type="checkbox" id="Coding Competition" name="Coding Competition">
+			<label for="Coding Competition">Coding Competition</label>
+			<input type="checkbox" id="Quiz" name="Quiz">
+			<label for="Quiz">Quiz</label><br>
+			<input type="checkbox" id="Paper Presentation" name="Paper Presentation">
+			<label for="Paper Presentation">Paper Presentation</label>
+			<input type="checkbox" id="Group Discussion" name="Group Discussion">
+			<label for="Group Discussion">Group Discussion</label><br>
+
+           
+            <input type="submit" value="Register" class="btn">
+        </form>
+    </div>
+</body>
+</html>

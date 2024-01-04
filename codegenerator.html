@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sequence Token Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    
+    #token {
+      font-size: 24px;
+      font-weight: bold;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    
+    #generate-btn {
+      font-size: 16px;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Sequence Token Generator</h1>
+  <div id="token"></div>
+  <button id="generate-btn">Generate Token</button>
+
+  <script>
+    var counter = 1;
+
+    function generateToken() {
+      // Generate a token based on the counter value
+      var token = "23SMSVECW" + counter;
+
+      // Display the generated token
+      document.getElementById('token').innerText = token;
+
+      // Increment the counter
+      counter++;
+    }
+
+    var generateBtn = document.getElementById('generate-btn');
+    generateBtn.addEventListener('click', generateToken);
+  </script>
+</body>
+</html>
