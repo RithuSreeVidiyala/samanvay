@@ -1,0 +1,13 @@
+<web-app>
+<servlet>
+<servlet-name>RegisterServlet1</servlet-name>
+<servlet-class>RegisterServlet1</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>RegisterServlet1</servlet-name>
+<url-pattern>/RegisterServlet1</servlet-name>
+</servlet-mapping>
+<welcome-file-list>
+<welcome-file>index.html</welcome-file>
+</welcome-file-list>
+</web-app>
